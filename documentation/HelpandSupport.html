@@ -1,0 +1,117 @@
+﻿<html>
+	
+<head>
+	<title>Help and Support</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="keywords" content="">
+	
+	<link type="text/css" rel="stylesheet" media="all" href="css/reset.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/base.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/hnd.css" />
+	<!--[if lte IE 8]>
+		<link type="text/css" rel="stylesheet" media="all" href="css/ielte8.css" />
+	<![endif]-->
+	<style type="text/css">
+		#topic_header
+		{
+			background-color: #EFEFEF;
+		}
+	</style>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/hnd.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			if (top.frames.length == 0)
+			{
+				var sTopicUrl = top.location.href.substring(top.location.href.lastIndexOf("/") + 1, top.location.href.length);
+				top.location.href = "Pr_Suite v1.0 Documentation.html?" + sTopicUrl;
+			}
+			else
+			{
+				var bTocSelected = false;
+				(function waitForTOC()
+				{
+					if (top && top.FrameTOC && top.FrameTOC.SelectTocItem)
+					{
+						top.FrameTOC.SelectTocItem("HelpandSupport");
+						bTocSelected = true;
+					}
+					if (!bTocSelected) setTimeout(function() { waitForTOC(); }, 300);
+				})();
+			}
+		});
+	</script>
+	
+	</head>
+
+<body>
+
+<div id="topic_header">
+			<div id="topic_header_content">
+				<h1 id="topic_header_text">Help and Support</h1>
+				
+				<div id="topic_breadcrumb">
+					<a href="Pr_SuiteIntroduction.html">Pr_Suite Introduction</a> &rsaquo;&rsaquo; </div>
+				</div>
+			<div id="topic_header_nav">
+				<a href="Pr_SuiteIntroduction.html"><img src="img/arrow_up.png" alt="Parent"/></a>
+				
+				<a href="Installation.html"><img src="img/arrow_left.png" alt="Previous"/></a>
+				
+				<a href="Gratitude.html"><img src="img/arrow_right.png" alt="Next"/></a>
+				
+				</div>
+			<div class="clear"></div>
+		</div>
+	<div id="topic_content">
+		
+<p></p>
+<p class="rvps2"><span class="rvts6">Pr_Suite provides informative help and support in the following ways:</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<ul style="text-indent: 0px; margin-left: 24px; list-style-position: outside; list-style-type: disc;">
+<li class="rvps2"><span class="rvts6">Most controls provide tooltips. To view tool tips, hover your mouse pointer over desired control.</span></li>
+</ul>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps5"><img alt="" style="padding : 1px;" src="lib/tooltip.jpg"></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<ul style="text-indent: 0px; margin-left: 24px; list-style-position: outside; list-style-type: disc;">
+<li class="rvps2"><a name="gizmo version"></a>
+<span class="rvts6">To find out the version and developer information for gizmos, hover your mouse pointer over </span><span class="rvts17">?</span><span class="rvts6"> icon.</span></li>
+</ul>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps5"><img alt="" style="padding : 1px;" src="lib/question_button_info.jpg"></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<ul style="text-indent: 0px; margin-left: 24px; list-style-position: outside; list-style-type: disc;">
+<li class="rvps2"><a name="getting started anchor"></a>
+<span class="rvts6">Help tab for gizmos and help panel for python scripts explains purpose of gizmo/python script and provides Getting Started (Step by Step, Caution) information.</span></li>
+</ul>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps5"><img alt="" style="padding : 1px;" src="lib/help_tab.jpg"></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<ul style="text-indent: 0px; margin-left: 24px; list-style-position: outside; list-style-type: disc;">
+<li class="rvps2"><a name="support anchor"></a>
+<span class="rvts6">Support for gizmos provides direct access to Documentation, Tutorial, Report Bug and Check for Updates.</span></li>
+</ul>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps5"><img alt="" style="padding : 1px;" src="lib/support.jpg"></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<ul style="text-indent: 0px; margin-left: 24px; list-style-position: outside; list-style-type: disc;">
+<li class="rvps2"><span class="rvts6">To directly contact developer for Requests and other Pr_Suite related issues e-mail at </span><a class="rvts14" href="mailto:support@parimalvfx.com?subject=Support%20for%20Pr_Suite">support@parimalvfx.com</a></li>
+</ul>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<ul style="text-indent: 0px; margin-left: 24px; list-style-position: outside; list-style-type: disc;">
+<li class="rvps2"><span class="rvts6">For latest Pr_Suite updates and news visit </span><a class="rvts14" href="http://www.parimalvfx.com/rnd/pr_suite/" target="_blank">http://www.parimalvfx.com/rnd/pr_suite/</a></li>
+</ul>
+<p></p>
+</div>
+	
+	<div id="topic_footer">
+
+			<div id="topic_footer_content">
+				Copyright (c) 2015 Parimal Desai</div>
+		</div>
+	</body>
+	
+</html>
+

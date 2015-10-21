@@ -1,0 +1,91 @@
+﻿<html>
+	
+<head>
+	<title>Multi Knob Values v1.0</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="keywords" content=", , , ">
+	
+	<link type="text/css" rel="stylesheet" media="all" href="css/reset.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/base.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/hnd.css" />
+	<!--[if lte IE 8]>
+		<link type="text/css" rel="stylesheet" media="all" href="css/ielte8.css" />
+	<![endif]-->
+	<style type="text/css">
+		#topic_header
+		{
+			background-color: #EFEFEF;
+		}
+	</style>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/hnd.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			if (top.frames.length == 0)
+			{
+				var sTopicUrl = top.location.href.substring(top.location.href.lastIndexOf("/") + 1, top.location.href.length);
+				top.location.href = "Pr_Suite v1.0 Documentation.html?" + sTopicUrl;
+			}
+			else
+			{
+				var bTocSelected = false;
+				(function waitForTOC()
+				{
+					if (top && top.FrameTOC && top.FrameTOC.SelectTocItem)
+					{
+						top.FrameTOC.SelectTocItem("MultiKnobValuesv10");
+						bTocSelected = true;
+					}
+					if (!bTocSelected) setTimeout(function() { waitForTOC(); }, 300);
+				})();
+			}
+		});
+	</script>
+	
+	</head>
+
+<body>
+
+<div id="topic_header">
+			<div id="topic_header_content">
+				<h1 id="topic_header_text">Multi Knob Values v1.0</h1>
+				
+				<div id="topic_breadcrumb">
+					<a href="Pr_SuitePythonScripts.html">Pr_Suite Python Scripts</a> &rsaquo;&rsaquo; </div>
+				</div>
+			<div id="topic_header_nav">
+				<a href="Pr_SuitePythonScripts.html"><img src="img/arrow_up.png" alt="Parent"/></a>
+				
+				<a href="DeleteThumbsdbandtmpv10.html"><img src="img/arrow_left.png" alt="Previous"/></a>
+				
+				<a href="ShuffleEXRPassesv10.html"><img src="img/arrow_right.png" alt="Next"/></a>
+				
+				</div>
+			<div class="clear"></div>
+		</div>
+	<div id="topic_content">
+		
+<p></p>
+<p class="rvps2"><span class="rvts17">Description:</span></p>
+<p class="rvps2"><span class="rvts6">Multi Knob Values is a script to change knob values in selected nodes.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><img alt="" style="padding : 1px;" src="lib/multi_knob_values_panel.jpg"></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts17">Operation:</span></p>
+<p class="rvps2"><span class="rvts6">Select nodes to change knob values. Now run script by clicking on Multi Knob Values from Pr_Suite Nuke menu or use the hotkey assigned to it. You can change values of up to five knobs at a time. Enter knob calling name and value for that knob, currently only numerical and boolean values are supported. Click OK to apply knob values to selected nodes.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts17">Special Note:</span></p>
+<p class="rvps2"><span class="rvts6">Before selecting nodes to change knob values make sure the knobs are available in all nodes. Currently only numerical and boolean values are supported, if you try to set values other than numerical or boolean then no value will get applied to that knob. If you write only knob calling name and don't assign any value to it then 0 value will get applied to that knob.</span></p>
+<p></p>
+</div>
+	
+	<div id="topic_footer">
+
+			<div id="topic_footer_content">
+				Copyright (c) 2015 Parimal Desai</div>
+		</div>
+	</body>
+	
+</html>
+

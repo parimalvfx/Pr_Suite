@@ -1,0 +1,98 @@
+﻿<html>
+	
+<head>
+	<title>Pr_Timecode v1.0</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="keywords" content=", , , , ">
+	
+	<link type="text/css" rel="stylesheet" media="all" href="css/reset.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/base.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/hnd.css" />
+	<!--[if lte IE 8]>
+		<link type="text/css" rel="stylesheet" media="all" href="css/ielte8.css" />
+	<![endif]-->
+	<style type="text/css">
+		#topic_header
+		{
+			background-color: #EFEFEF;
+		}
+	</style>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/hnd.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			if (top.frames.length == 0)
+			{
+				var sTopicUrl = top.location.href.substring(top.location.href.lastIndexOf("/") + 1, top.location.href.length);
+				top.location.href = "Pr_Suite v1.0 Documentation.html?" + sTopicUrl;
+			}
+			else
+			{
+				var bTocSelected = false;
+				(function waitForTOC()
+				{
+					if (top && top.FrameTOC && top.FrameTOC.SelectTocItem)
+					{
+						top.FrameTOC.SelectTocItem("Pr_Timecodev10");
+						bTocSelected = true;
+					}
+					if (!bTocSelected) setTimeout(function() { waitForTOC(); }, 300);
+				})();
+			}
+		});
+	</script>
+	
+	</head>
+
+<body>
+
+<div id="topic_header">
+			<div id="topic_header_content">
+				<h1 id="topic_header_text">Pr_Timecode v1.0</h1>
+				
+				<div id="topic_breadcrumb">
+					<a href="Pr_SuiteGizmos.html">Pr_Suite Gizmos</a> &rsaquo;&rsaquo; </div>
+				</div>
+			<div id="topic_header_nav">
+				<a href="Pr_SuiteGizmos.html"><img src="img/arrow_up.png" alt="Parent"/></a>
+				
+				<a href="Pr_LightAimv10.html"><img src="img/arrow_left.png" alt="Previous"/></a>
+				
+				<a href="Pr_InfoTextv10.html"><img src="img/arrow_right.png" alt="Next"/></a>
+				
+				</div>
+			<div class="clear"></div>
+		</div>
+	<div id="topic_content">
+		
+<p></p>
+<p class="rvps2"><span class="rvts17">Description:</span></p>
+<p class="rvps2"><span class="rvts6">Pr_Timecode is a timecode with manual controls so you can generate a timecode as per your need.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><img alt="" style="padding : 1px;" src="lib/Pr_Timecode_v10_tabs.jpg"></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts17">Inputs:</span></p>
+<p class="rvps2"><span class="rvts6">Pr_Timecode has only one input which takes a image on which timecode is to be displayed.</span></p>
+<p class="rvps2"><span class="rvts17"><br/></span></p>
+<p class="rvps2"><span class="rvts17">Special Note:</span></p>
+<p class="rvps2"><span class="rvts6">Error after creating Pr_Timeode - Select a font path from Text as per your OS. After setting your font path error will terminate. If you have custom font path then set it manually.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">Font path - Set your font path based on your operating system in first time, if you try to set font path multiple times then your current Nuke session will crash.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">Drop frames - If you are using fps such as 29.97 or 59.94 then replace colons with semicolons in start code.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts17">Tutorial:</span></p>
+<p class="rvps2"><span class="rvts6">Tutorial Link - </span><a class="rvts14" href="https://youtu.be/jLN26LlX4IQ" target="_blank">https://youtu.be/jLN26LlX4IQ</a></p>
+<p></p>
+</div>
+	
+	<div id="topic_footer">
+
+			<div id="topic_footer_content">
+				Copyright (c) 2015 Parimal Desai</div>
+		</div>
+	</body>
+	
+</html>
+
